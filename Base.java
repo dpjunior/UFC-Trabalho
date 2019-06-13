@@ -52,8 +52,8 @@ public class Base{
 			
 			while(result.next()){
 				
-			Aluno.setCiu(result.getInt(""));
-			Aluno.setNome( result.getString(""));
+			Luta.setcontadorLuta(result.getInt(""));
+			Luta.setNome( result.getString(""));
 			}
 			    conexao.close();
 			    
