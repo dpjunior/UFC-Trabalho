@@ -14,6 +14,7 @@ import negocio.Luta;
 public class Liga{
 	
 	ArrayList<TextFile> jogador01 = new ArrayList<TextFile>();
+	ArrayList<TextFile> jogador02 = new ArrayList<TextFile>();
 	ArrayList<TextFile> Luta = new ArrayList<TextFile>();
 
 
@@ -29,7 +30,7 @@ public class Liga{
 			
 			if(jogador01.contadorLutas() == i) {			
 				VerificarHabilidade (jogador01);
-				Luta.startLuta(boot02,jogador01);
+				Luta.startLuta(jogador01);
 				jogador01.ganharPontos();
 			}
 			
@@ -37,11 +38,11 @@ public class Liga{
 		System.out.println(jogador01.getNome()+ " = " + jogador01.getPontosLiga() + " pontos");
 		
 		//Condição para verificar o ganhador
-		if (jogador01.contadorLutas()== null) {
-			System.out.println(jogador01.getNome()+":"+" Ganhou a liga!");
+		if (jogador01.contadorLutas()== null &&  ) {
+			System.out.println(jogador01.getNome()+":"+" Venceu a liga!");
 		}
 		else {
-			System.out.println(jogador01.getNome()+":"+"\tNao chegou ao final da liga!");
+			System.out.println(jogador02.getNome()+":"+"\t Venceu a Liga!");
 		}
 	}
 
